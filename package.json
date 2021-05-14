@@ -1,0 +1,23 @@
+{
+  "name": "inversify-factory-issue",
+  "version": "1.0.0",
+  "description": "Inversify config with factories",
+  "main": "index.js",
+  "scripts": {
+    "test": "ts-node test.ts",
+    "test:all": "npm run test:5.0.5 && npm run test:5.1.1",
+    "test:5.0.5": "npm i --save-exact inversify@5.0.5 && npm run test",
+    "test:5.1.1": "npm i --save-exact inversify@5.1.1 && npm run test"
+  },
+  "author": "7jpsan",
+  "license": "ISC",
+  "dependencies": {
+    "inversify": "5.1.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.3"
+  }
+}
